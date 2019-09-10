@@ -1,7 +1,7 @@
 import seaborn as sns
 from sklearn.ensemble import RandomForestClassifier
 
-# 
+
 import matplotlib.pyplot as plt
 import pandas as pd
 from sklearn.svm import SVR
@@ -17,7 +17,6 @@ df=pd.DataFrame(s["data"],columns=s['feature_names'])
 # ['data', 'target', 'target_names', 'DESCR', 'feature_names', 'filename']
 
 
-# from sklearn.datasets import
 x=df
 
 y=s['target']
@@ -26,6 +25,7 @@ y=s['target']
 
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
+
 x_trained, x_test , y_trained, y_test = train_test_split(x,y,test_size=.4,random_state=101)
 # print(x_test,y_test)
 a=SVR()
